@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+
+    <style>
+        .container{
+            width: 100vw;
+            height: 100vh;
+            border: 3px solid black;
+            display: flex;
+             justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 400px;
+            height: 400px;
+            background-color: beige;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            /* rotation smmoth krdia */
+            transition: all 3s linear 1s;
+        }
+        p{
+            font-size: 36px;
+        }
+        .box:hover{
+            /* transform: rotate(360deg); */
+             /* transform:scale(2); */
+              /* transform:scale(0.5); */
+               /* transform:rotate(-45deg); */
+               /* tilt 45 */
+               transform: skew(45deg);
+               /* transform:translate(-500px) ; */
+                /* transform:translate(0px, 210px) ; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+         <div class="box">
+      <p>  this is transforms box</p>
+    </div>
+    </div>
+   
+</body>
+</html>
